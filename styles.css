@@ -1,1 +1,128 @@
-* 
+/* VARIABLES */
+:root {
+  --clr-primary-dark: #071629;
+  --clr-primary-light: #FFF;
+  --clr-accent: #FF6565;
+  --clr-link-hover: #FF6565;
+
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+
+
+/* INITIALIZATION */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font: inherit;
+  /* outline: red 1px solid; */
+}
+
+body {
+  color: var(--clr-primary-dark);
+  background-color: var(--clr-primary-dark);
+  font-family: 'Source Sans 3', sans-serif;
+  cursor: default;
+  font-weight: var(--fw-regular);
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary-light);
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  /* outline: red 1px solid; */
+  --max-width: 1000px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  height: 100%;
+  margin-inline: auto;
+}
+
+
+
+/* HEADER */
+header {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--clr-primary-light);
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+
+  nav ul {
+    display: flex;
+  }
+}
+
+
+
+/* HERO */
+
+
+
+/* WHAT WE DO */
+.what-we-do {
+  background-color: var(--clr-primary-light);
+}
+
+
+
+/* RESULTS */
+.results {
+  background-image: url("images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--clr-primary-light);
+  text-align: center;
+
+  .shape {
+    background-image: url(images/pentagon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* CONTACT */
+.contact {
+  background-color: var(--clr-primary-light);
+}
+
+
+
+/* FOOTER */
+
+
+
+/* UTILITY/MISC */
+.logo {
+  width: 161px;
+}
