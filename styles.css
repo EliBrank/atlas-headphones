@@ -10,6 +10,13 @@
   --fw-semibold: 600;
   --fw-bold: 700;
   --fw-black: 900;
+
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-700: 2rem;
+  --fs-800: 2.875rem;
 }
 
 
@@ -32,7 +39,7 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   cursor: default;
   font-weight: var(--fw-regular);
-  
+  text-align: center;
 }
 
 a {
@@ -67,30 +74,82 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: var(--clr-primary-light);
-  text-align: center;
 }
 
 .top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  nav {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-bold);
+  }
 
   nav ul {
+    width: 252px;
     display: flex;
+    justify-content: space-between;
   }
 }
 
 
 
 /* HERO */
+.hero {
+  h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+  }
 
+  .subheading {
+    font-weight: var(--fw-bold);
+  }
+
+  .btn {
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0 2px 10px);
+  }
+
+  .info {
+    --max-width: 637px;
+  }
+}
 
 
 /* WHAT WE DO */
 .what-we-do {
   background-color: var(--clr-primary-light);
+
+  .info {
+    --max-width: 637px;
+
+    h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semibold);
+    }
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      width: 207px;
+    }
+
+    /* .icon { */
+    /* } */
+
+    h3 {
+      font-size: var(--fs-500);
+      font-weight: var(--fw-semibold);
+    }
+
+    p {
+      font-size: var(--fs-300);
+    }
+  }
 }
-
-
 
 /* RESULTS */
 .results {
@@ -99,30 +158,98 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: var(--clr-primary-light);
-  text-align: center;
+
+  .info {
+    --max-width: 637px;
+
+    h2 {
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semibold);
+    }
+  }
+}
+
+.shapes {
+  display: flex;
+  justify-content: space-between;
 
   .shape {
+    width: 190px;
+    height: 190px;
     background-image: url(images/pentagon.png);
-    background-size: contain;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .percentage {
+    font-size: var(--fs-800);
+    font-weight: var(--fw-bold);
+  }
+
+  p {
+    font-size: var(--fs-300);
+  }
 }
+
+
 
 
 
 /* CONTACT */
 .contact {
   background-color: var(--clr-primary-light);
+
+  h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semibold);
+  }
+}
+
+.form-contact {
+  --max-width: 335px;
+
+  display: grid;
+  grid-template-columns: 1;
+  gap: 2.875rem;
+
+  .btn {
+    justify-self: center;
+  }
 }
 
 
 
 /* FOOTER */
+footer {
+  color: var(--clr-primary-light);
+}
 
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* UTILITY/MISC */
 .logo {
   width: 161px;
 }
+
+.btn {
+  color: var(--clr-primary-light);
+  background-color: var(--clr-accent);
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: var(--fw-semibold);
+  border-radius: 2rem;
+  border: none;
+}
+
