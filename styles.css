@@ -58,12 +58,17 @@ ul {
 .wrapper {
   /* outline: red 1px solid; */
   --max-width: 1000px;
-  --padding: 1rem;
+  --padding: 3.5rem;
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   height: 100%;
   margin-inline: auto;
+
+  @media screen and (width < 480px) {
+    --padding: 1.5rem;
+  }
 }
+
 
 
 
@@ -132,6 +137,10 @@ header {
 
   & > .wrapper {
     padding-block: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .info {
@@ -148,10 +157,18 @@ header {
   }
 
   .icons {
-    --column-num: 2;
+    --column-num: 4;
+
+    @media screen and (width < 1000px) {
+      --column-num: 2;
+    }
+
+    @media screen and (width < 480px) {
+      --column-num: 1;
+    }
 
     display: grid;
-    grid-template-columns: repeat(var(--column-num), 1fr);
+    grid-template-columns: repeat(var(--column-num), 207px);
     gap: 2.75rem;
 
     .card {
@@ -159,12 +176,15 @@ header {
       margin-inline: auto;
     }
 
-    /* .icon { */
-    /* } */
+    i {
+      font-size: 6rem;
+      color: var(--clr-accent);
+    }
 
     h3 {
       font-size: var(--fs-500);
       font-weight: var(--fw-semibold);
+      margin-block: 0.5rem 0.75rem;
     }
 
     p {
@@ -200,11 +220,23 @@ header {
 }
 
 .shapes {
-  --column-num: 2;
+  --column-num: 4;
+
+  display: flex;
+  justify-content: center;
+
+  @media screen and (width < 1000px) {
+    --column-num: 2;
+  }
+
+  @media screen and (width < 480px) {
+    --column-num: 1;
+  }
+
 
   display: grid;
-  grid-template-columns: repeat(var(--column-num), 1fr);
-  gap: 2.75rem;
+  grid-template-columns: repeat(var(--column-num), 190px);
+  gap: 2.75rem 4.75rem;
 
   .shape {
     width: 190px;
@@ -234,7 +266,7 @@ header {
   background-color: var(--clr-primary-light);
 
   & > .wrapper {
-   padding-block: 90px 39px;
+   padding-block: 110px 130px;
   }
 
   h2 {
@@ -245,13 +277,30 @@ header {
 
 .form-contact {
   --max-width: 335px;
+}
+
+.form-fields {
+  --max-width: 335px;
 
   display: grid;
   grid-template-columns: 1;
   gap: 2.875rem;
 
-  .btn {
-    justify-self: center;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semibold);
+  margin-block: 56px;
+
+  input, textarea {
+    border: none;
+    /* color-mix used to add custom opacity to color variable */
+    border-bottom: 1px solid color-mix(in srgb, var(--clr-primary-dark) 17.45%, transparent);
+    padding-bottom: 1rem;
+    resize: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 1;
   }
 }
 
@@ -277,6 +326,10 @@ footer {
   width: 130px;
   display: flex;
   justify-content: space-between;
+
+  .icon i {
+    font-size: 1.875rem;
+  }
 }
 
 
