@@ -85,9 +85,24 @@ header {
   }
 }
 
-.top-nav {
+.hamburger-container {
   display: flex;
-  justify-content: space-between;
+}
+
+  #hamburger-checkbox {
+    display: block;
+  }
+  
+  .hamburger {
+    font-size: 1.875rem;
+    position: absolute;
+    display: none;
+  }
+
+
+.top-links {
+  display: flex;
+  justify-content: center;
   align-items: center;
 
   nav {
@@ -102,6 +117,22 @@ header {
   }
 }
 
+@media screen and (width < 480px) {
+  .hamburger {
+    display: block;
+  }
+  .top-links {
+    flex-direction: column;
+    .top-nav {
+      flex-direction: column;
+      display: block;
+    }
+  }
+
+  .hamburger-container #hamburger-checkbox:checked ~ .hello {
+    display: none;
+  }
+}
 
 
 /* HERO */
@@ -277,6 +308,7 @@ header {
 
 .form-contact {
   --max-width: 335px;
+  
 }
 
 .form-fields {
@@ -312,6 +344,9 @@ footer {
 
   & > .wrapper {
    padding-block: 90px 39px;
+   @media screen and (width < 480px) {
+    padding-top: 40px;
+   }
   }
 }
 
@@ -320,6 +355,16 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 72px;
+
+  @media screen and (width < 1000px) {
+    margin-bottom: 58px;
+    
+  }
+  @media screen and (width < 480px) {
+    flex-direction: column;
+    gap: 45px;
+    margin-bottom: 42px;
+  }
 }
 
 .social-icons {

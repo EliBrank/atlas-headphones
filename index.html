@@ -1,150 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="glyphs.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <meta name="author" content="Kelci Atkinson, Elias Brinkman">
-    <title>Headphones</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="glyphs.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <meta name="author" content="Kelci Atkinson, Elias Brinkman">
+  <title>Headphones</title>
+</head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="wrapper">
-        <div class="top-nav">
-          <a href="#"><img src="images/logo_headphones.png" class="logo" alt="logo"></a>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">what we do</a>
-              </li>
-              <li>
-                <a href="#">our results</a>
-              </li>
-              <li>
-                <a href="#">contact us</a>
-              </li>
-            </ul>
-          </nav>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="wrapper">
+      <div class="hamburger-container">
+        <input type="checkbox" id="hamburger-checkbox">
+        <label for="hamburger-checkbox" class="holberton_school-icon-menu hamburger"></label>
+        <div class="hello">
+          <p>World</p>
         </div>
-
-        <!-- Hero -->
-        <section class="hero">
-          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-          <p class="subheading">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-          <button class="btn">CALL TO ACTION</button>
-          <p class="info wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </section>
       </div>
-
-    </header>
-    <main>
-
-      <!-- What We Do -->
-      <section class="what-we-do">
-        <div class="wrapper">
-          <div class="info wrapper">
-            <h2>What we do...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="icons">
-            <div class="card">
-              <i class="holberton_school-icon-ic_sound"></i>
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-              <i class="holberton_school-icon-ic_video"></i>
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-              <i class="holberton_school-icon-ic_music"></i>
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="card">
-              <i class="holberton_school-icon-ic_hearing"></i>
-              <h3>Lorem ipsum</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Results -->
-      <section class="results">
-        <div class="wrapper">
-          <div class="info wrapper">
-            <h2>Our results speak for themselves</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-          <div class="shapes">
-            <div class="shape">
-              <p class="percentage">+2%</p>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="shape">
-              <p class="percentage">+2%</p>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="shape">
-              <p class="percentage">+2%</p>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="shape">
-              <p class="percentage">+2%</p>
-              <p>Lorem ipsum dolor</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section class="contact">
-        <div class="wrapper">
-          <h2>Contact us</h2>
-          <form action="#" method="post" class="form-contact wrapper">
-            <div class="form-fields">
-              <input type="text" placeholder="Name" id="name" maxlength="75" required>
-              <input type="email" placeholder="Email" id="email" maxlength="55" required>
-              <textarea name="message" id="message" placeholder="Your message" rows="1" required minlength="10"></textarea>
-            </div>
-            <button class="btn">CALL TO ACTION</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="wrapper">
-        <div class="bottom-links">
-          <a href="#"><img src="images/logo_headphones.png" class="logo" alt="logo"></a>
-          <ul class="social-icons">
-            <li class="icon">
-              <i class="holberton_school-icon-ic_facebook"></i>
+      <div class="top-links">
+        <a href="#"><img src="images/logo_headphones.png" class="logo" alt="logo"></a>
+        <nav>
+          <ul class="top-nav">
+            <li>
+              <a href="#">what we do</a>
             </li>
-            <li class="icon">
-              <i class="holberton_school-icon-ic_twitter"></i>
+            <li>
+              <a href="#">our results</a>
             </li>
-            <li class="icon">
-              <i class="holberton_school-icon-ic_instagram"></i>
+            <li>
+              <a href="#">contact us</a>
             </li>
           </ul>
-        </div>
-        <p class="copyright">©headphones 2020</p>
+        </nav>
       </div>
-    </footer>
-  </body>
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p class="subheading">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <button class="btn">CALL TO ACTION</button>
+        <p class="info wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur.</p>
+      </section>
+    </div>
+
+  </header>
+  <main>
+
+    <!-- What We Do -->
+    <section class="what-we-do">
+      <div class="wrapper">
+        <div class="info wrapper">
+          <h2>What we do...</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.</p>
+        </div>
+        <div class="icons">
+          <div class="card">
+            <i class="holberton_school-icon-ic_sound"></i>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <i class="holberton_school-icon-ic_video"></i>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <i class="holberton_school-icon-ic_music"></i>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="card">
+            <i class="holberton_school-icon-ic_hearing"></i>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="results">
+      <div class="wrapper">
+        <div class="info wrapper">
+          <h2>Our results speak for themselves</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="shapes">
+          <div class="shape">
+            <p class="percentage">+2%</p>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="shape">
+            <p class="percentage">+2%</p>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="shape">
+            <p class="percentage">+2%</p>
+            <p>Lorem ipsum dolor</p>
+          </div>
+          <div class="shape">
+            <p class="percentage">+2%</p>
+            <p>Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="wrapper">
+        <h2>Contact us</h2>
+        <form action="#" method="post" class="form-contact wrapper">
+          <div class="form-fields">
+            <input type="text" placeholder="Name" id="name" maxlength="75" required>
+            <input type="email" placeholder="Email" id="email" maxlength="55" required>
+            <textarea name="message" id="message" placeholder="Your message" rows="1" required
+              minlength="10"></textarea>
+          </div>
+          <button class="btn">CALL TO ACTION</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+      <div class="bottom-links">
+        <a href="#"><img src="images/logo_headphones.png" class="logo" alt="logo"></a>
+        <ul class="social-icons">
+          <li class="icon">
+            <i class="holberton_school-icon-ic_facebook"></i>
+          </li>
+          <li class="icon">
+            <i class="holberton_school-icon-ic_twitter"></i>
+          </li>
+          <li class="icon">
+            <i class="holberton_school-icon-ic_instagram"></i>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">©headphones 2020</p>
+    </div>
+  </footer>
+</body>
+
 </html>
