@@ -3,7 +3,6 @@
   --clr-primary-dark: #071629;
   --clr-primary-light: #FFF;
   --clr-accent: #FF6565;
-  --clr-link-hover: #FF6565;
 
   --fw-thin: 300;
   --fw-regular: 400;
@@ -80,7 +79,7 @@ ul {
 header {
   background-image: url("images/headphones_hero_1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 40% center;
   background-repeat: no-repeat;
   color: var(--clr-primary-light);
 
