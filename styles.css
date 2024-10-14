@@ -89,15 +89,15 @@ header {
   }
 }
 
-  #hamburger-checkbox {
-    display: none;
-  }
-  
-  .hamburger {
-    font-size: 1.875rem;
-    position: absolute;
-    display: none;
-  }
+#hamburger-checkbox {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.875rem;
+  position: absolute;
+  display: none;
+}
 
 
 .top-links {
@@ -114,11 +114,11 @@ header {
     width: 252px;
     display: flex;
     justify-content: space-between;
-
   }
 }
 
-@media screen and (width < 480px) {
+
+@media screen and (width < 550px) {
   header > .wrapper {
     padding-top: 46px;
   }
@@ -126,6 +126,7 @@ header {
   .hamburger {
     display: block;
   }
+
   .top-links {
     flex-direction: column;
     .top-nav {
@@ -240,7 +241,7 @@ header {
   color: var(--clr-primary-light);
 
   & > .wrapper {
-   padding-block: 141px 79px;
+    padding-block: 141px 79px;
   }
 
   .info {
@@ -304,7 +305,7 @@ header {
   background-color: var(--clr-primary-light);
 
   & > .wrapper {
-   padding-block: 110px 130px;
+    padding-block: 110px 130px;
   }
 
   h2 {
@@ -315,7 +316,7 @@ header {
 
 .form-contact {
   --max-width: 335px;
-  
+
 }
 
 .form-fields {
@@ -331,8 +332,8 @@ header {
 
   input, textarea {
     border: none;
-    /* color-mix used to add custom opacity to color variable */
-    border-bottom: 1px solid color-mix(in srgb, var(--clr-primary-dark) 17.45%, transparent);
+    /* relative color used to add custom opacity to color variable */
+    border-bottom: 1px solid hsl(from var(--clr-primary-dark) h s l / 0.1745);
     padding-bottom: 1rem;
     resize: none;
   }
@@ -350,10 +351,10 @@ footer {
   color: var(--clr-primary-light);
 
   & > .wrapper {
-   padding-block: 90px 39px;
-   @media screen and (width < 480px) {
-    padding-top: 40px;
-   }
+    padding-block: 90px 39px;
+    @media screen and (width < 480px) {
+      padding-top: 40px;
+    }
   }
 }
 
@@ -365,7 +366,7 @@ footer {
 
   @media screen and (width < 1000px) {
     margin-bottom: 58px;
-    
+
   }
   @media screen and (width < 480px) {
     flex-direction: column;
@@ -400,11 +401,11 @@ footer {
   border: none;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   opacity: 0.9;
 }
 
 .copyright {
   opacity: 0.3517;
 }
-
