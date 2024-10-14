@@ -16,4 +16,4 @@ The design, created in Figma, can be found [at this link](https://www.figma.com/
 A live version of the webpage can be found [at this link](https://elibrank.github.io/atlas-headphones/).
 
 
-[Authors](atlas-headphones/AUTHORS)
+[Authors](/AUTHORS)
